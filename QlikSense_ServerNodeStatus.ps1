@@ -1,5 +1,6 @@
 #---------------------------------------------
-# Script Name: QlikSense script to fetch service status of all nodes in a multinode environment. The same script can be used for a single node instance as well.
+# Script Name: QlikSense Server Node Status Check
+# Details: QlikSense script to fetch service status of all nodes in a multinode environment. The same script can be used for a single node instance as well.
 # Owner: Aadil Madarveet
 # Date: 4th April 2019
 #---------------------------------------------

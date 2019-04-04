@@ -1,5 +1,6 @@
 #---------------------------------------------
-# Script Name: QlikSense script to fetch PostgreSQL DB connection details. This script allows you to view the max connections configured for the site and the connections in use and available.
+# Script Name: QlikSense Get PostgreSQL DB Connection Details
+# Details: QlikSense script to fetch PostgreSQL DB connection details. This script allows you to view the max connections configured for the site and the connections in use and available.
 # Owner: Aadil Madarveet
 # Date: 4th April 2019
 #---------------------------------------------
@@ -14,7 +15,7 @@ function Get-ODBCData{
          )
 
     $conn = New-Object System.Data.Odbc.OdbcConnection
-	#Create a DSN for the postgresql db under system DSN and provide that name here. Download the postgresql ODBC connector from the postgresql site. https://www.postgresql.org/ftp/odbc/versions/msi/
+	#Create a DSN for the postgresql db under system DSN and provide that name here. Download the postgresql ODBC connector. https://www.postgresql.org/ftp/odbc/versions/msi/
     $conn.ConnectionString = "DSN=POSTGRESQL_ODBC_DSN_NAME;"	
     $conn.open()
     $command = New-object System.Data.Odbc.OdbcCommand($query,$conn)
